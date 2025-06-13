@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidade | Vitrine Make</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+
+      <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="img/logo.jpeg" alt="Logo Vitrine Make">
+    </div>
+    <nav class="menu">
+      <a href="index.html">Home</a>
+      <a href="box.html">Box</a>
+      <a href="loja.html">Loja</a>
+      <a href="politica.html">Política e Privacidade</a>
+    </nav>
+  </header>
+
+
+
+ <section>
+    <h1 style="font-size: 36px; margin-bottom: 10px;">✨ Escolha o que quiser por apenas R$10!</h1>
+    <p style="font-size: 18px;">Na Vitrine Make, cada produto individual custa só R$10. Batons, máscaras, skincare, acessórios e muito mais!</p>
+  </section>
+
+  
+
+
+ 
+    <style>
+      body {
+        background-color: #fff0fa;
+        color: #000000;
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        text-align: center;
+      }
+  
+      h2 {
+        color: #ff69b4;
+        border-bottom: 1px solid #444;
+        padding-bottom: 5px;
+      }
+      
+      section{
+        margin: 100px;
+      }
+
+
+      .categoria {
+        margin-bottom: 40px;
+      }
+  
+     .card {
+  background-color: #1a1a1a;
+  border: 1px solid #ff69b4;
+  border-radius: 10px;
+  padding: 15px;
+  width: 240px;
+  height: 370px; /* Altura fixa para todos os cards */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribui o conteúdo uniformemente */
+  align-items: center;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 180px; /* Altura fixa */
+  object-fit: cover; /* Redimensiona a imagem mantendo proporção e cobrindo o espaço */
+  border-radius: 8px;
+}
+
+
+.produtos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centraliza os cards */
+  gap: 20px;
+  padding: 10px;
+}
+  
+      .card h4 {
+        margin: 10px 0 5px;
+        color:#ff4fa2
+      }
+  
+      .card p {
+        margin: 5px 0;
+        color: #ccc;
+      }
+  
+      .btn-adicionar {
+        background-color: #ff69b4;
+        color: #000;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+        margin-top: 10px;
+      }
+  
+      .btn-adicionar:hover {
+        background-color: #ff4fa2;
+      }
+  
+      .carrinho {
+        background-color: #111;
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 50px;
+        margin: 30px;
+        color: #fff0fa;
+      }
+  
+      .carrinho ul {
+        list-style: none;
+        padding: 0;
+      }
+  
+      .carrinho li {
+        padding: 6px 0;
+        border-bottom: 1px solid #333;
+      }
+  
+      .btn-finalizar {
+        margin-top: 15px;
+        padding: 12px 20px;
+        background-color: #25d366;
+        color: #000;
+        font-weight: bold;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 5px;
+      }
+        
+/* Tablets: mantém cards lado a lado com largura ajustada */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .card {
+    width: 40%;
+    margin: 15px auto;
+  }
+
+  .produtos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  section {
+    margin: 40px 20px;
+  }
+
+  .carrinho {
+    margin: 20px;
+    
+  }
+
+
+  .novidades {
+  background-color: #fff0fa;
+  padding: 40px 20px;
+  text-align: center;
+  margin: 40px auto;
+  border-top: 2px solid #ff69b4;
+}
+
+.novidades h2 {
+  color: #ff4fa2;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.novidades p {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.novidades-botoes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.botao-novidade {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.botao-novidade.whatsapp {
+  background-color: #25D366;
+}
+
+.botao-novidade.instagram {
+  background-color: #C13584;
+}
+
+.botao-novidade:hover {
+  opacity: 0.9;
+}
+
+
+}
+@media (max-width: 480px){
+   .btn-adicionar, .btn-finalizar {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+  }
+}
+
+/* Responsividade para celulares (até 768px) */
+
+@media (max-width: 760px) {
+  section {
+    margin: 30px;
+  }
+
+  .produtos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .categoria{
+    margin-bottom: 30px;
+  }
+
+  .card {
+    width: 70%;
+    margin: 15px 0;
+  }
+
+  .carrinho {
+    margin: 20px 10px;
+    padding: 15px;
+  }
+
+  .btn-adicionar, .btn-finalizar {
+    width: 70%;
+    padding: 12px;
+    font-size: 16px;
+  }
+}
+      
+    </style>
+  </head>
+  <body>
+  
+    <!-- Maquiagem -->
+    <div class="categoria">
+      <h2>💄 Maquiagem</h2>
+      <div class="produtos">
+        <div class="card">
+          <img src="img/base.jpg" alt="Base">
+          <h4>Base líquida</h4>
+          <p>R$10,00</p>
+          <button class="btn-adicionar" onclick="adicionarCarrinho('Base líquida')">Adicionar</button>
+        </div>
+        <div class="card">
+          <img src="img/batom líquido.jpg" alt="Batom">
+          <h4>Batom líquido</h4>
+          <p>R$10,00</p>
+          <button class="btn-adicionar" onclick="adicionarCarrinho('Batom líquido')">Adicionar</button>
+        </div>
+        <div class="card">
+            <img src="img/blush.jpg" alt="">
+            <h4>Blush</h4>
+            <p>R$10,00</p>
+            <button class="btn-adicionar" onclick="adicionarCarrinho('Blush')">Adicionar</button>
+          </div>
+          <div class="card">
+            <img src="img/corretivo.jpg" alt="">
+            <h4>Corretivo líquido</h4>
+            <p>R$10,00</p>
+            <button class="btn-adicionar" onclick="adicionarCarrinho('Corretivo líquido')">Adicionar</button>
+          </div>
+          <div class="card">
+            <img src="img/esponjas.jpg" alt="">
+            <h4>Esponjas</h4>
+            <p>R$10,00</p>
+            <button class="btn-adicionar" onclick="adicionarCarrinho('Esponjas')">Adicionar</button>
+          </div>
+          <div class="card">
+            <img src="img/iluminador.jpg" alt="">
+            <h4>Iluminador</h4>
+            <p>R$10,00</p>
+            <button class="btn-adicionar" onclick="adicionarCarrinho('Iluminador')">Adicionar</button>
+          </div>
+          <div class="card">
+            <img src="img/lápis.jpg" alt="">
+            <h4>Lápis labial</h4>
+            <p>R$10,00</p>
+            <button class="btn-adicionar" onclick="adicionarCarrinho('Lápis labial')">Adicionar</button>
+          </div>
+          <div class="card">
+            <img src="img/primer.jpg" alt="">
+            <h4>Primer</h4>
+            <p>R$10,00</p>
+            <button class="btn-adicionar" onclick="adicionarCarrinho('Primer')">Adicionar</button>
+          </div>
+          <div class="card">
+            <img src="img/pó.jpg" alt="">
+            <h4>Pó Compacto</h4>
+            <p>R$10,00</p>
+            <button class="btn-adicionar" onclick="adicionarCarrinho('Pó Compacto')">Adicionar</button>
+          </div>
+          <div class="card">
+            <img src="img/rímel.jpg" alt="">
+            <h4>Rímel</h4>
+            <p>R$10,00</p>
+            <button class="btn-adicionar" onclick="adicionarCarrinho('Rímel')">Adicionar</button>
+          </div>
+          <div class="card">
+            <img src="img/sombra.jpg" alt="">
+            <h4>Estojinho de Sombra</h4>
+            <p>R$10,00</p>
+            <button class="btn-adicionar" onclick="adicionarCarrinho('Estojinho de Sombra')">Adicionar</button>
+          </div>
+          <div class="card">
+            <img src="img/batom com acido hia.jpeg" alt="">
+            <h4>Batom com ácido hialurônico</h4>
+            <p>R$10,00</p>
+            <button class="btn-adicionar" onclick="adicionarCarrinho('Batom com ácido hialurônico')">Adicionar</button>
+          </div>
+          <div class="card">
+            <img src="img/batom mate.jpeg" alt="">
+            <h4>Batom Matte</h4>
+            <p>R$10,00</p>
+            <button class="btn-adicionar" onclick="adicionarCarrinho('Batom Matte')">Adicionar</button>
+          </div>
+          <div class="card">
+            <img src="img/blash bastao.jpeg" alt="">
+            <h4>Blush Bastão</h4>
+            <p>R$10,00</p>
+            <button class="btn-adicionar" onclick="adicionarCarrinho('Blush Bastão')">Adicionar</button>
+          </div>
+          <div class="card">
+            <img src="img/Corretivo Naked Natural.jpeg" alt="">
+            <h4>Corretivo Naked Natural</h4>
+            <p>R$10,00</p>
+            <button class="btn-adicionar" onclick="adicionarCarrinho('Corretivo Naked Natural')">Adicionar</button>
+          </div>
+          <div class="card">
+            <img src="img/delineador.jpeg" alt="">
+            <h4>Delineador</h4>
+            <p>R$10,00</p>
+            <button class="btn-adicionar" onclick="adicionarCarrinho('Delineador')">Adicionar</button>
+          </div>
+          <div class="card">
+            <img src="img/Esponjas (2).jpeg" alt="">
+            <h4>Esponjas</h4>
+            <p>R$10,00</p>
+            <button class="btn-adicionar" onclick="adicionarCarrinho('Esponjas')">Adicionar</button>
+          </div>
+          <div class="card">
+            <img src="img/gloss glitter.jpeg" alt="">
+            <h4>Gloss com glitter</h4>
+            <p>R$10,00</p>
+            <button class="btn-adicionar" onclick="adicionarCarrinho('Gloss com glitter')">Adicionar</button>
+          </div>
+          <div class="card">
+            <img src="img/glosss.jpeg" alt="">
+            <h4>Gloss</h4>
+            <p>R$10,00</p>
+            <button class="btn-adicionar" onclick="adicionarCarrinho('Gloss')">Adicionar</button>
+          </div>
+          <div class="card">
+            <img src="img/Pó facial solto.jpeg" alt="">
+            <h4>Pó facial Solto</h4>
+            <p>R$10,00</p>
+            <button class="btn-adicionar" onclick="adicionarCarrinho('Pó facial Solto')">Adicionar</button>
+          </div>
+          <div class="card">
+            <img src="img/Hidratante labial.jpeg" alt="">
+            <h4>Hidratante Labial</h4>
+            <p>R$10,00</p>
+            <button class="btn-adicionar" onclick="adicionarCarrinho('Hidratante Labial')">Adicionar</button>
+          </div>
+          <div class="card">
+            <img src="img/sombras.jpeg" alt="">
+            <h4>Sombras Matte</h4>
+            <p>R$10,00</p>
+            <button class="btn-adicionar" onclick="adicionarCarrinho('Sombras Matte')">Adicionar</button>
+          </div>
+          <div class="card">
+            <img src="img/battom.jpeg" alt="">
+            <h4>Batom Mágico</h4>
+            <p>R$10,00</p>
+            <button class="btn-adicionar" onclick="adicionarCarrinho('Batom Mágico')">Adicionar</button>
+          </div>
+      </div>
+    </div>
+  
+    <!-- Skincare -->
+    <div class="categoria">
+      <h2>🧴 Skincare</h2>
+      <div class="produtos">
+        <div class="card">
+          <img src="img/sabonete.jpg" alt="Sabonete">
+          <h4>Sabonete Líquido</h4>
+          <p>R$10,00</p>
+          <button class="btn-adicionar" onclick="adicionarCarrinho('Sabonete Líquido')">Adicionar</button>
+        </div>
+        <div class="card">
+          <img src="img/Sérum facial.jpg" alt="Sérum Facial">
+          <h4>Sérum Facial</h4>
+          <p>R$10,00</p>
+          <button class="btn-adicionar" onclick="adicionarCarrinho('Sérum Facial')">Adicionar</button>
+        </div>
+        <div class="card">
+            <img src="img/esfoliante facial.jpg" alt="">
+            <h4>Esfoliante Facial</h4>
+            <p>R$10,00</p>
+            <button class="btn-adicionar" onclick="adicionarCarrinho('Esfoliante Facial')">Adicionar</button>
+          </div>
+          <div class="card">
+            <img src="img/mousse micelar.jpg" alt="">
+            <h4>Mousse Micelar</h4>
+            <p>R$10,00</p>
+            <button class="btn-adicionar" onclick="adicionarCarrinho('Mousse Micelar')">Adicionar</button>
+          </div>
+          <div class="card">
+            <img src="img/esfoliante hidratante.jpg" alt="">
+            <h4>Esfoliante corporal</h4>
+            <p>R$10,00</p>
+            <button class="btn-adicionar" onclick="adicionarCarrinho('Esfoliante corporal')">Adicionar</button>
+          </div>
+          <div class="card">
+            <img src="img/gel hidratante.jpg" alt="">
+            <h4>Gel hidratante</h4>
+            <p>R$10,00</p>
+            <button class="btn-adicionar" onclick="adicionarCarrinho('Gel hidratante')">Adicionar</button>
+          </div>
+          <div class="card">
+            <img src="img/sabonete intimo.jpg" alt="">
+            <h4>Sabonete Íntimo</h4>
+            <p>R$10,00</p>
+            <button class="btn-adicionar" onclick="adicionarCarrinho('Sabonete Íntimo')">Adicionar</button>
+          </div>
+          <div class="card">
+            <img src="img/bodysplash.jpg" alt="">
+            <h4>Body Splash</h4>
+            <p>R$10,00</p>
+            <button class="btn-adicionar" onclick="adicionarCarrinho('Body Splash')">Adicionar</button>
+          </div>
+          <div class="card">
+            <img src="img/argila branca.jpeg" alt="">
+            <h4>Argila Branca</h4>
+            <p>R$10,00</p>
+            <button class="btn-adicionar" onclick="adicionarCarrinho('Argila Branca')">Adicionar</button>
+          </div>
+          <div class="card">
+            <img src="img/Boca.jpeg" alt="">
+            <h4>Body Splash</h4>
+            <p>R$10,00</p>
+            <button class="btn-adicionar" onclick="adicionarCarrinho('Body Splash')">Adicionar</button>
+          </div>
+          <div class="card">
+            <img src="img/mousse limpeza.jpeg" alt="">
+            <h4>Mousse Limpeza</h4>
+            <p>R$10,00</p>
+            <button class="btn-adicionar" onclick="adicionarCarrinho('Mousse Limpeza')">Adicionar</button>
+          </div>
+           <div class="card">
+            <img src="img/creme para olhos.jpeg" alt="">
+            <h4>Creme para olhos</h4>
+            <p>R$10,00</p>
+            <button class="btn-adicionar" onclick="adicionarCarrinho('Creme para olhos')">Adicionar</button>
+          </div>
+          <div class="card">
+            <img src="img/creme rosa mosqueta.jpeg" alt="">
+            <h4>Creme Rosa Mosqueta</h4>
+            <p>R$10,00</p>
+            <button class="btn-adicionar" onclick="adicionarCarrinho('Creme Rosa Mosqueta')">Adicionar</button>
+          </div>
+          <div class="card">
+            <img src="img/Máscara Facial.jpeg" alt="">
+            <h4>Máscara Facial</h4>
+            <p>R$10,00</p>
+            <button class="btn-adicionar" onclick="adicionarCarrinho('Máscara Facial')">Adicionar</button>
+          </div>
+          <div class="card">
+            <img src="img/perfume.jpeg" alt="">
+            <h4>Perfume</h4>
+            <p>R$10,00</p>
+            <button class="btn-adicionar" onclick="adicionarCarrinho('Perfume')">Adicionar</button>
+          </div>
+          <div class="card">
+            <img src="img/tonico facial.jpeg" alt="">
+            <h4>Tônico Facial</h4>
+            <p>R$10,00</p>
+            <button class="btn-adicionar" onclick="adicionarCarrinho('Tônico Facial')">Adicionar</button>
+          </div>
+          <div class="card">
+            <img src="img/Protetor solar.jpeg" alt="">
+            <h4>Protetor Solar</h4>
+            <p>R$10,00</p>
+            <button class="btn-adicionar" onclick="adicionarCarrinho('Protetor Solar')">Adicionar</button>
+          </div>
+          <div class="card">
+            <img src="img/banho sexy.jpeg" alt="">
+            <h4>Banho sexy</h4>
+            <p>R$10,00</p>
+            <button class="btn-adicionar" onclick="adicionarCarrinho('Banho sexy')">Adicionar</button>
+          </div>
+      </div>
+    </div>
+  
+    <!-- Cabelo -->
+    <div class="categoria">
+      <h2>💇‍♀️ Cabelo</h2>
+      <div class="produtos">
+        <div class="card">
+          <img src="img/shampoo masculino.jpg" alt="Shampoo Masculino">
+          <h4>Shampoo Soul Macho</h4>
+          <p>R$10,00</p>
+          <button class="btn-adicionar" onclick="adicionarCarrinho('Shampoo Soul Macho')">Adicionar</button>
+        </div>
+        <div class="card">
+          <img src="img/condicionador masculino.jpg" alt="Condicionador Masculino">
+          <h4>Condicionador Soul Macho</h4>
+          <p>R$10,00</p>
+          <button class="btn-adicionar" onclick="adicionarCarrinho('Condicionador Soul Macho')">Adicionar</button>
+        </div>
+        <div class="card">
+            <img src="img/leave in.jpg" alt="">
+            <h4>Leave-in</h4>
+            <p>R$10,00</p>
+            <button class="btn-adicionar" onclick="adicionarCarrinho('Leave-in')">Adicionar</button>
+          </div>
+          <div class="card">
+            <img src="img/gel.jpg" alt="">
+            <h4>Gel Cola</h4>
+            <p>R$10,00</p>
+            <button class="btn-adicionar" onclick="adicionarCarrinho('Gel Cola')">Adicionar</button>
+          </div>
+          <div class="card">
+            <img src="img/escova.jpg" alt="">
+            <h4>Escova</h4>
+            <p>R$10,00</p>
+            <button class="btn-adicionar" onclick="adicionarCarrinho('Escova')">Adicionar</button>
+          </div>
+          <div class="card">
+            <img src="img/mascara.jpg" alt="">
+            <h4>Máscara Capilar</h4>
+            <p>R$10,00</p>
+            <button class="btn-adicionar" onclick="adicionarCarrinho('Máscara Capilar')">Adicionar</button>
+          </div>
+          <div class="card">
+            <img src="img/condicionador feminino.jpg" alt="">
+            <h4>Condicionador Baba Soul</h4>
+            <p>R$10,00</p>
+            <button class="btn-adicionar" onclick="adicionarCarrinho('Condicionador Baba Soul')">Adicionar</button>
+          </div>
+          <div class="card">
+            <img src="img/shampoo.jpg" alt="">
+            <h4>Shampoo Baba Soul</h4>
+            <p>R$10,00</p>
+            <button class="btn-adicionar" onclick="adicionarCarrinho('Shampoo Baba Soul')">Adicionar</button>
+          </div>
+          <div class="card">
+            <img src="img/condicionador Apple.jpeg" alt="">
+            <h4>Condicionador Apple</h4>
+            <p>R$10,00</p>
+            <button class="btn-adicionar" onclick="adicionarCarrinho('Condicionador Apple')">Adicionar</button>
+          </div>
+          <div class="card">
+            <img src="img/Shampoo Apple.jpeg" alt="">
+            <h4>Shampoo Apple</h4>
+            <p>R$10,00</p>
+            <button class="btn-adicionar" onclick="adicionarCarrinho('Shampoo Apple')">Adicionar</button>
+          </div>
+          <div class="card">
+            <img src="img/condicionador Horse.jpeg" alt="">
+            <h4>Condicionador Horse</h4>
+            <p>R$10,00</p>
+            <button class="btn-adicionar" onclick="adicionarCarrinho('Condicionador Horse')">Adicionar</button>
+          </div>
+          <div class="card">
+            <img src="img/ShampooHorse.jpeg" alt="">
+            <h4>Shampoo Horse</h4>
+            <p>R$10,00</p>
+            <button class="btn-adicionar" onclick="adicionarCarrinho('Shampoo Horse')">Adicionar</button>
+          </div>
+          <div class="card">
+            <img src="img/live in quiabo.jpeg" alt="">
+            <h4>Leave-in Quiabo</h4>
+            <p>R$10,00</p>
+            <button class="btn-adicionar" onclick="adicionarCarrinho('Leave-in Quiabo')">Adicionar</button>
+          </div>
+          <div class="card">
+            <img src="img/Máscara.jpeg" alt="">
+            <h4>Máscara Capilar</h4>
+            <p>R$10,00</p>
+            <button class="btn-adicionar" onclick="adicionarCarrinho('Máscara Capilar')">Adicionar</button>
+          </div>
+      </div>
+    </div>
+
+    <!-- Outros -->
+    <div class="categoria">
+      <h2>✨ Outros</h2>
+      <div class="produtos">
+        <div class="card">
+          <img src="img/Colares e brincos.jpeg" alt="Sabonete">
+          <h4>Colares e brincos</h4>
+          <p>R$10,00</p>
+          <button class="btn-adicionar" onclick="adicionarCarrinho('Colares e brincos')">Adicionar</button>
+        </div>
+        <div class="card">
+          <img src="img/chaveiro urso.jpeg" alt="Sérum Facial">
+          <h4>Chaveiros</h4>
+          <p>R$10,00</p>
+          <button class="btn-adicionar" onclick="adicionarCarrinho('Chaveiros')">Adicionar</button>
+        </div>
+        <div class="card">
+          <img src="img/baby.jpeg" alt="Sabonete">
+          <h4>Baby</h4>
+          <p>R$10,00</p>
+          <button class="btn-adicionar" onclick="adicionarCarrinho('Baby')">Adicionar</button>
+        </div>
+        <div class="card">
+          <img src="img/baby (2).jpeg" alt="Sérum Facial">
+          <h4>Baby</h4>
+          <p>R$10,00</p>
+          <button class="btn-adicionar" onclick="adicionarCarrinho('Baby')">Adicionar</button>
+        </div>
+        <div class="card">
+          <img src="img/baby 3.jpeg" alt="Sabonete">
+          <h4>Baby</h4>
+          <p>R$10,00</p>
+          <button class="btn-adicionar" onclick="adicionarCarrinho('Baby')">Adicionar</button>
+        </div>
+        <div class="card">
+          <img src="img/baby 4.jpeg" alt="Sérum Facial">
+          <h4>Baby</h4>
+          <p>R$10,00</p>
+          <button class="btn-adicionar" onclick="adicionarCarrinho('Baby')">Adicionar</button>
+        </div>
+        <div class="card">
+          <img src="img/garrafa.jpeg" alt="Sérum Facial">
+          <h4>Garrafa</h4>
+          <p>R$10,00</p>
+          <button class="btn-adicionar" onclick="adicionarCarrinho('Garrafa')">Adicionar</button>
+        </div>
+        <div class="card">
+          <img src="img/Garrafa (2).jpeg" alt="Sabonete">
+          <h4>Garrafa</h4>
+          <p>R$10,00</p>
+          <button class="btn-adicionar" onclick="adicionarCarrinho('Garrafa')">Adicionar</button>
+        </div>
+        <div class="card">
+          <img src="img/Garrafa 35.jpeg" alt="Sérum Facial">
+          <h4>Garrafa</h4>
+          <p>R$10,00</p>
+          <button class="btn-adicionar" onclick="adicionarCarrinho('Garrafa')">Adicionar</button>
+        </div>
+        <div class="card">
+          <img src="img/Fone de ouvido.jpeg" alt="Sabonete">
+          <h4>Fone de Ouvido</h4>
+          <p>R$10,00</p>
+          <button class="btn-adicionar" onclick="adicionarCarrinho('Fone de Ouvido')">Adicionar</button>
+        </div>
+        <div class="card">
+          <img src="img/necessaire.jpeg" alt="Sérum Facial">
+          <h4>Necessaire</h4>
+          <p>R$10,00</p>
+          <button class="btn-adicionar" onclick="adicionarCarrinho('Necessaire')">Adicionar</button>
+        </div>
+        <div class="card">
+          <img src="img/cabo c.jpeg" alt="Sabonete">
+          <h4>Cabo C</h4>
+          <p>R$10,00</p>
+          <button class="btn-adicionar" onclick="adicionarCarrinho('Cabo C')">Adicionar</button>
+        </div>
+      </div>
+
+      <!-- Linha Premium -->
+    <div class="categoria">
+      <h1 style="font-size: 36px; margin-bottom: 10px;">💎 Linha Premium</h1>
+        <p>Descubra o luxo acessível com nossos produtos exclusivos de alta performance!</p>
+        <hr>
+      <div class="produtos">
+        <div class="card">
+          <img src="img/bolsa.jpeg" alt="Sabonete">
+          <h4>Bolsa stras</h4>
+          <p>R$49,90</p>
+          <button class="btn-adicionar" onclick="adicionarCarrinho('Bolsa stras')">Adicionar</button>
+        </div>
+         <div class="card">
+          <img src="img/bolsascoração.jpeg" alt="Sabonete">
+          <h4>Bolsa de coração</h4>
+          <p>R$49,90</p>
+          <button class="btn-adicionar" onclick="adicionarCarrinho('Bolsa de coração')">Adicionar</button>
+        </div>
+      </div>
+
+
+
+      <!-- Seção de Novidades -->
+<section class="novidades">
+  <h1 style="font-size: 36px; margin-bottom: 10px;">🆕 Novidades na Vitrine Make</h1>
+  <p>Fique por dentro dos lançamentos e produtos recém-chegados! Entre em contato ou nos siga:</p>
+
+      <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+        <a onclick="window.open('https://wa.me/5514991106681?text=Olá! Quero saber as novidades da Vitrine Make!', '_blank')"
+         style="background-color: #000; color: #fff; padding: 15px 30px; border-radius: 8px; font-weight: bold; text-decoration: none; font-size: 16px;">
+          📲 Ver no WhatsApp
+        </a>
+        <a onclick="window.open('https://www.instagram.com/maquiagens_barrabonita', '_blank')"
+         style="background-color: #ff0090; color: #ffffff; padding: 15px 30px; border-radius: 8px; font-weight: bold; text-decoration: none; font-size: 16px;">
+          📸 Seguir no Instagram
+        </a>
+      </div>
+
+</section>
+
+
+
+    <!-- Carrinho -->
+    <div class="carrinho">
+      <h2>🛒 Seu Carrinho</h2>
+      <ul id="lista-carrinho"></ul>
+      <a id="btn-whats" href="#" target="_blank" class="btn-finalizar" style="display:none;">Finalizar no WhatsApp</a>
+    </div>
+  
+    <script>
+      const carrinho = [];
+      const lista = document.getElementById('lista-carrinho');
+      const btnWhats = document.getElementById('btn-whats');
+  
+      function adicionarCarrinho(produto) {
+        carrinho.push(produto);
+        atualizarCarrinho();
+      }
+  
+      function atualizarCarrinho() {
+        lista.innerHTML = '';
+        carrinho.forEach((item, index) => {
+          const li = document.createElement('li');
+          li.textContent = `✔ ${item}`;
+          lista.appendChild(li);
+        });
+  
+        if (carrinho.length > 0) {
+          const mensagem = encodeURIComponent("Olá! Gostaria de comprar os seguintes produtos por R$10 cada:\n\n" + carrinho.map(p => `- ${p}`).join('\n'));
+          btnWhats.href = `https://wa.me/5599999999999?text=${mensagem}`;
+          btnWhats.style.display = 'inline-block';
+        } else {
+          btnWhats.style.display = 'none';
+        }
+      }
+    </script>
+  
+  </body>
+  </html>
+  
+</head>
+</html>

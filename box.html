@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+  <title>Vitrine Make</title>
+
+
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="img/logo.jpeg" alt="Logo Vitrine Make">
+    </div>
+    <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="box.html">Box</a>
+        <a href="loja.html">Loja</a>
+        <a href="politica.html">Política e Privacidade</a>
+      </nav>
+  </header>
+
+  <!-- Conteúdo principal virá aqui -->
+</head>
+ <!-- Seção Hero -->
+ <div class="hero">
+    <h1>Se presenteie com beleza todos os meses</h1>
+    <p>Receba sua própria box com 5 produtos incríveis da Vitrine Make e surpreenda-se todo trimestre.</p>
+    <button onclick="location.href='#perfil'">Quero Assinar</button>
+  </div>
+
+  <!-- Como Funciona -->
+  <section class="como-funciona">
+    <h2>Como Funciona?</h2>
+    <img src="img/como.png" alt="Celular Ilustrativo">
+    <h3>1. Preencha seu perfil de beleza</h3>
+    <p>Conta para nós como você é, tudo o que você gosta e também precisa.</p>
+  </section>
+
+    <!--BOX VITRINE MAKE-->
+    <section class="box-section">
+        <h2>Produtos que vêm na Box Vitrine Make</h2>
+        <p style="text-align: center;"> Toda box conta com <strong>5 produtos surpresa</strong> em tamanho real das melhores marcas do mercado.Dá uma
+          olhada em algumas delas:</p>
+  
+        <div class="carousel-container">
+  
+          <div class="carousel-track" id="carouselTrack">
+            <div class="carousel-item"><img src="img/2.png" alt="Paleta de Sombras"></div>
+            <div class="carousel-item"><img src="img/6.png" alt="Batom Vermelho"></div>
+            <div class="carousel-item"><img src="img/4.png" alt="Iluminador Glow"></div>
+          </div>
+        </div>
+      </section>
+
+       <!--Plano de assinatura-->
+    <section class="plano-assinatura">
+        <div class="conteudo">
+          <h1 style="color:#fff">Assine o seu plano trimestral</h1>
+          <div class="plano-box">
+            <h3>Plano Vitrine Make</h3>
+            <p class="preco"><strong>R$ 50,00/mês</strong></p>
+            <p class="detalhes">Receba 5 produtos surpresa personalizados todo mês<br>no conforto da sua casa 🏡</p>
+            <button onclick="location.href='#perfil'">Quero Assinar</button>
+          </div>
+        </div>
+      </section>
+
+
+      
+    <!-- Perfil de Beleza -->
+    <h1>Preencha os campos abaixos para receber uma assinatura feita sob medida para você!
+    </h1>
+
+
+    <div class="form-wrapper">
+
+      <form id="perfil" name="perfil">
+        <h2 style="color:#ff006f">Perfil de Beleza</h2>
+
+        <label>Cor da pele:</label>
+        <select name="cor_pele" required>
+          <option value="">Selecione</option>
+          <option>🌸 Clara</option>
+          <option>🌼 Média</option>
+          <option>☀️ Morena</option>
+          <option>🌺 Negra</option>
+        </select>
+
+        <label>Sua pele é:</label>
+        <select name="sua_pele" required>
+          <option value="">Selecione</option>
+          <option>💧 Seca</option>
+          <option>🌿 Normal</option>
+          <option>🌤️ Mista</option>
+          <option>✨ Oleosa</option>
+        </select>
+
+        <label>O que gostaria de tratar na sua pele:</label>
+        <select name="tratar_pele" required>
+          <option value="">Selecione</option>
+          <option>💧 Seca</option>
+          <option>🌿 Normal</option>
+          <option>🌤️ Mista</option>
+          <option>✨ Oleosa</option>
+        </select>
+
+        <label>Quais os seus aromas favoritos:</label>
+        <select name="aromas" required>
+          <option value="">Selecione</option>
+          <option>🌬️ Fresco</option>
+          <option>🌲 Amadeirado</option>
+          <option>🍭 Doce</option>
+          <option>🍓 Frutal</option>
+          <option>🍋 Cítrico</option>
+          <option>🌸 Floral</option>
+        </select>
+
+        <label>Tipo de cabelo:</label>
+        <select name="tipo_cabelo" required>
+          <option value="">Selecione</option>
+          <option>🧖‍♀️ Liso</option>
+          <option>🌊 Ondulado</option>
+          <option>🌀 Cacheado</option>
+          <option>🌟 Crespo</option>
+        </select>
+
+        <label>Cor do cabelo:</label>
+        <select name="cor_cabelo" required>
+          <option value="">Selecione</option>
+          <option>💛 Loiro</option>
+          <option>🤍 Grisalho</option>
+          <option>❤️ Ruivo</option>
+          <option>🤎 Castanho</option>
+          <option>🖤 Preto</option>
+          <option>🌈 Colorido</option>
+        </select>
+
+        <label>Espessura do cabelo:</label>
+        <select name="espessura_cabelo" required>
+          <option value="">Selecione</option>
+          <option>🪶 Fino</option>
+          <option>💇‍♀️ Médio</option>
+          <option>🧵 Grosso</option>
+        </select>
+
+        <label>Seu cabelo é:</label>
+        <select name="seucabelo" required>
+          <option value="">Selecione</option>
+          <option>🌱 Natural</option>
+          <option>🧪 Quimicamente tratado</option>
+        </select>
+
+        <label>O que gostaria de tratar no seu cabelo:</label>
+        <select name="necessidades" required>
+          <option value="">Selecione</option>
+          <option>✨ Oleosidade</option>
+          <option>💧 Ressecamento</option>
+          <option>🍂 Queda</option>
+          <option>🌪️ Volume</option>
+          <option>✂️ Pontas duplas</option>
+          <option>⚡ Frizz</option>
+        </select>
+
+        <label>Quais cores de batom você prefere?</label>
+        <select name="batom" requiered>
+          <option value="">Selecione</option>
+          <option>🤎 Nudes</option>
+          <option>💗 Rosa</option>
+          <option>❤️ Vermelho</option>
+          <option>💜 Roxos e Vinhos</option>
+          <option>🌈 Tons Exóticos</option>
+        </select>
+
+        <label>Quais cores de sombra você gosta?</label>
+        <select name="sombra" requiered>
+          <option value="">Selecione</option>
+          <option>🤍 Neutras</option>
+          <option>🌈 Coloridas</option>
+        </select>
+
+        <label>Quais cores de lápis de olho/delineador?</label>
+        <select name="lapis_delineador" requiered>
+          <option value="">Selecione</option>
+          <option>🟡 Bege</option>
+          <option>🟤 Marrom</option>
+          <option>⚫ Preto</option>
+          <option>🌈 Coloridas</option>
+        </select>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="form-box">
+          <h3>💄 Itens de maquiagem que gosta ou gostaria de experimentar:</h3>
+
+          <div class="checkbox-item">
+            <input type="checkbox" id="base" name="itens_maquiagem" value="Base">
+            <label for="base">🧴 Base</label>
+          </div>
+
+          <div class="checkbox-item">
+            <input type="checkbox" id="corretivo" name="itens_maquiagem" value="Corretivo">
+            <label for="corretivo">🧼 Corretivo</label>
+          </div>
+
+          <div class="checkbox-item">
+            <input type="checkbox" id="primer" name="itens_maquiagem" value="Primer">
+            <label for="primer">✨ Primer</label>
+          </div>
+
+          <div class="checkbox-item">
+            <input type="checkbox" id="blush" name="itens_maquiagem" value="Blush">
+            <label for="blush">😊 Blush</label>
+          </div>
+
+          <div class="checkbox-item">
+            <input type="checkbox" id="po" name="itens_maquiagem" value="Pó">
+            <label for="po">🌬️ Pó</label>
+          </div>
+
+          <div class="checkbox-item">
+            <input type="checkbox" id="iluminador" name="itens_maquiagem" value="Iluminador">
+            <label for="iluminador">💡 Iluminador</label>
+          </div>
+
+          <div class="checkbox-item">
+            <input type="checkbox" id="bronzer" name="itens_maquiagem" value="Bronzer">
+            <label for="bronzer">🌞 Bronzer</label>
+          </div>
+
+          <div class="checkbox-item">
+            <input type="checkbox" id="gloss" name="itens_maquiagem" value="Gloss">
+            <label for="gloss">💄 Gloss</label>
+          </div>
+
+          <div class="checkbox-item">
+            <input type="checkbox" id="batom-bala" name="itens_maquiagem" value="Batom em Bala">
+            <label for="batom-bala">💋 Batom em Bala</label>
+          </div>
+
+          <div class="checkbox-item">
+            <input type="checkbox" id="batom-liquido" name="itens_maquiagem" value="Batom Líquido">
+            <label for="batom-liquido">💧 Batom Líquido</label>
+          </div>
+
+          <div class="checkbox-item">
+            <input type="checkbox" id="lip-tint" name="itens_maquiagem" value="Lip Tint">
+            <label for="lip-tint">🩸 Lip Tint</label>
+          </div>
+
+          <div class="checkbox-item">
+            <input type="checkbox" id="delineador" name="itens_maquiagem" value="Delineador">
+            <label for="delineador">✏️ Delineador</label>
+          </div>
+
+          <div class="checkbox-item">
+            <input type="checkbox" id="sombra" name="itens_maquiagem" value="Sombra">
+            <label for="sombra">🎨 Sombra</label>
+          </div>
+
+          <div class="checkbox-item">
+            <input type="checkbox" id="mascara-cilios" name="itens_maquiagem" value="Máscara de Cílios">
+            <label for="mascara-cilios">👁️ Máscara de Cílios</label>
+          </div>
+
+          <div class="checkbox-item">
+            <input type="checkbox" id="lapis-olho" name="itens_maquiagem" value="Lápis de Olho">
+            <label for="lapis-olho">🖊️ Lápis de Olho</label>
+          </div>
+
+          <div class="checkbox-item">
+            <input type="checkbox" id="pincel" name="itens_maquiagem" value="Pincel">
+            <label for="pincel">🖌️ Pincel</label>
+          </div>
+
+          <div class="checkbox-item">
+            <input type="checkbox" id="esponjas" name="itens_maquiagem" value="Esponjas">
+            <label for="esponjas">🧽 Esponjas</label>
+          </div>
+        </div>
+
+
+        <div class="form-box">
+          <h3>💇‍♀️ Cuidados com o cabelo que gosta ou gostaria de experimentar:</h3>
+
+          <div class="checkbox-item">
+            <input type="checkbox" id="shampoo" name="cuidados_cabelo" value="Shampoo">
+            <label for="shampoo">💎 Shampoo</label>
+          </div>
+
+          <div class="checkbox-item">
+            <input type="checkbox" id="condicionador" name="cuidados_cabelo" value="Condicionador">
+            <label for="condicionador">🧴 Condicionador</label>
+          </div>
+
+          <div class="checkbox-item">
+            <input type="checkbox" id="mascara" name="cuidados_cabelo" value="Máscara">
+            <label for="mascara">🧖‍♀️ Máscara</label>
+          </div>
+
+          <div class="checkbox-item">
+            <input type="checkbox" id="oleo" name="cuidados_cabelo" value="Óleo Reparador">
+            <label for="oleo">💧 Óleo Reparador</label>
+          </div>
+
+          <div class="checkbox-item">
+            <input type="checkbox" id="leavein" name="cuidados_cabelo" value="Leave-in">
+            <label for="leavein">🌀 Leave-in</label>
+          </div>
+        </div>
+
+        <div class="form-box">
+          <h3>🧖‍♀️ Itens de skincare que gosta ou gostaria de experimentar:</h3>
+
+          <div class="checkbox-item">
+            <input type="checkbox" id="sabonete-facial" name="skincare" value="Sabonete Facial">
+            <label for="sabonete-facial">🧼 Sabonete Facial</label>
+          </div>
+
+          <div class="checkbox-item">
+            <input type="checkbox" id="sabonete-corporal" name="skincare" value="Sabonete Corporal">
+            <label for="sabonete-corporal">🧼 Sabonete Corporal</label>
+          </div>
+
+          <div class="checkbox-item">
+            <input type="checkbox" id="creme-maos" name="skincare" value="Creme de Mãos">
+            <label for="creme-maos">🍯 Creme de Mãos</label>
+          </div>
+
+          <div class="checkbox-item">
+            <input type="checkbox" id="hidratante-facial" name="skincare" value="Hidratante Facial">
+            <label for="hidratante-facial">💧 Hidratante Facial</label>
+          </div>
+
+          <div class="checkbox-item">
+            <input type="checkbox" id="hidratante-labial" name="skincare" value="Hidratante Labial">
+            <label for="hidratante-labial">💄 Hidratante Labial</label>
+          </div>
+
+          <div class="checkbox-item">
+            <input type="checkbox" id="hidratante-corporal" name="skincare" value="Hidratante Corporal">
+            <label for="hidratante-corporal">🧴 Hidratante Corporal</label>
+          </div>
+
+          <div class="checkbox-item">
+            <input type="checkbox" id="esfoliante-facial" name="skincare" value="Esfoliante Facial">
+            <label for="esfoliante-facial">🌿 Esfoliante Facial</label>
+          </div>
+
+          <div class="checkbox-item">
+            <input type="checkbox" id="esfoliante-corporal" name="skincare" value="Esfoliante Corporal">
+            <label for="esfoliante-corporal">🌿 Esfoliante Corporal</label>
+          </div>
+
+          <div class="checkbox-item">
+            <input type="checkbox" id="mascaras-faciais" name="skincare" value="Máscaras Faciais">
+            <label for="mascaras-faciais">🎭 Máscaras Faciais</label>
+          </div>
+
+          <div class="checkbox-item">
+            <input type="checkbox" id="oleo-corporal" name="skincare" value="Óleo Corporal">
+            <label for="oleo-corporal">💧 Óleo Corporal</label>
+          </div>
+
+          <div class="checkbox-item">
+            <input type="checkbox" id="tonico-facial" name="skincare" value="Tônico Facial">
+            <label for="tonico-facial">🧴 Tônico Facial</label>
+          </div>
+
+          <div class="checkbox-item">
+            <input type="checkbox" id="protetor-solar" name="skincare" value="Protetor Solar">
+            <label for="protetor-solar">🌞 Protetor Solar</label>
+          </div>
+
+          <div class="checkbox-item">
+            <input type="checkbox" id="serum-facial" name="skincare" value="Sérum Facial">
+            <label for="serum-facial">💧 Sérum Facial</label>
+          </div>
+
+          <div class="checkbox-item">
+            <input type="checkbox" id="desodorante" name="skincare" value="Desodorante">
+            <label for="desodorante">🧼 Desodorante</label>
+          </div>
+
+          <div class="checkbox-item">
+            <input type="checkbox" id="fragrancia" name="skincare" value="Fragrância">
+            <label for="fragrancia">🌸 Fragrância</label>
+          </div>
+
+          <div class="checkbox-item">
+            <input type="checkbox" id="demaquilante" name="skincare" value="Demaquilante">
+            <label for="demaquilante">🧽 Demaquilante</label>
+          </div>
+        </div>
+
+
+    </div>
+    </form>
+
+
+
+
+
+
+    <div class="form-wrapper">
+      <!-- Formulário de Informações -->
+      <form id="formulario" name="formulario">
+        <h2 style="color:#ff006f">Dados Pessoais</h2>
+        <label>Nome:</label>
+        <input type="text" name="nome" required />
+
+        <label>Telefone:</label>
+        <input type="tel" name="telefone" required />
+
+        <label>Email:</label>
+        <input type="email" name="email" required />
+
+        <label>CEP:</label>
+        <input type="text" name="cep" required />
+
+        <label>Endereço:</label>
+        <input type="text" name="endereco" required />
+
+        <label>Bairro:</label>
+        <input type="text" name="bairro" required />
+
+        <label>Cidade:</label>
+        <input type="text" name="cidade" required />
+
+        <label>Estado:</label>
+        <input type="text" name="estado" required />
+      </form>
+    </div>
+
+
+    <div class="form-wrapper">
+      <!-- Pagamento -->
+      <form id="pagamento" name="pagamento">
+        <h2 style="color:#ff006f">Pagamento</h2>
+        Plano Trimestral: <strong>R$ 50,00/mês</strong>
+        <label>Forma de Pagamento:</label>
+        <select name="pagamento_opcao" required>
+          <option value="">Selecione</option>
+          <option>PIX</option>
+          <option>Cartão de Crédito</option>
+        </select>
+
+        <button type="button" class="submit-btn" onclick="enviarWhatsApp()">Enviar Pedido via WhatsApp</button>
+      </form>
+
+    </div>
+
+</body>
+</html>
