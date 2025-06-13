@@ -17,6 +17,9 @@
       <a href="box.html">Box</a>
       <a href="loja.html">Loja</a>
       <a href="politica.html">Política e Privacidade</a>
+      <a href="#carrinho" class="menu-carrinho">
+        <span>🛒</span>
+      </a>
     </nav>
   </header>
 
@@ -54,6 +57,9 @@
       .categoria {
         margin-bottom: 40px;
       }
+
+     
+
   
      .card {
   background-color: #1a1a1a;
@@ -732,40 +738,45 @@
 
 
 
-    <!-- Carrinho -->
-    <div class="carrinho">
-      <h2>🛒 Seu Carrinho</h2>
-      <ul id="lista-carrinho"></ul>
-      <a id="btn-whats" href="#" target="_blank" class="btn-finalizar" style="display:none;">Finalizar no WhatsApp</a>
-    </div>
-  
-    <script>
-      const carrinho = [];
-      const lista = document.getElementById('lista-carrinho');
-      const btnWhats = document.getElementById('btn-whats');
-  
-      function adicionarCarrinho(produto) {
-        carrinho.push(produto);
-        atualizarCarrinho();
-      }
-  
-      function atualizarCarrinho() {
-        lista.innerHTML = '';
-        carrinho.forEach((item, index) => {
-          const li = document.createElement('li');
-          li.textContent = `✔ ${item}`;
-          lista.appendChild(li);
-        });
-  
-        if (carrinho.length > 0) {
-          const mensagem = encodeURIComponent("Olá! Gostaria de comprar os seguintes produtos por R$10 cada:\n\n" + carrinho.map(p => `- ${p}`).join('\n'));
-          btnWhats.href = `https://wa.me/5599999999999?text=${mensagem}`;
-          btnWhats.style.display = 'inline-block';
-        } else {
-          btnWhats.style.display = 'none';
-        }
-      }
-    </script>
+<!-- Carrinho -->
+<div class="carrinho" id="carrinho">
+  <h2>🛒 Seu Carrinho</h2>
+  <ul id="lista-carrinho"></ul>
+  <a id="btn-whats" href="#" target="_blank" class="btn-finalizar" style="display:none;">Finalizar no WhatsApp</a>
+</div>
+
+<script>
+  const carrinho = [];
+  const lista = document.getElementById('lista-carrinho');
+  const btnWhats = document.getElementById('btn-whats');
+
+  function adicionarCarrinho(produto) {
+    carrinho.push(produto);
+    atualizarCarrinho();
+  }
+
+  function removerItem(index) {
+    carrinho.splice(index, 1);
+    atualizarCarrinho();
+  }
+
+  function atualizarCarrinho() {
+    lista.innerHTML = '';
+    carrinho.forEach((item, index) => {
+      const li = document.createElement('li');
+      li.innerHTML = `✔ ${item} <span onclick="removerItem(${index})" style="color: red; margin-left: 10px; cursor: pointer;">❌</span>`;
+      lista.appendChild(li);
+    });
+
+    if (carrinho.length > 0) {
+      const mensagem = encodeURIComponent("Olá! Gostaria de comprar os seguintes produtos por R$10 cada:\n\n" + carrinho.map(p => `- ${p}`).join('\n'));
+      btnWhats.href = `https://wa.me/5514991106681?text=${mensagem}`;
+      btnWhats.style.display = 'inline-block';
+    } else {
+      btnWhats.style.display = 'none';
+    }
+  }
+</script>
   
   </body>
   </html>
