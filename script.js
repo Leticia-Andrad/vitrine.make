@@ -79,5 +79,9 @@ function enviarWhatsApp() {
 
     window.open(url, "_blank");
   }
-
   
+  window.addEventListener('DOMContentLoaded', () => {
+    const navbar = document.querySelector('.navbar');
+    const altura = navbar.offsetHeight + 15; // 30px extra para margem
+    document.body.style.paddingTop = `${altura}px`;
+  });
