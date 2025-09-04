@@ -669,3 +669,51 @@ form select {
 .btn-whats:hover {
   background-color: #1ebc5a;
 }
+
+/*   ATUALIZAÇÕES*/
+.alerta-carrinho {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ff69b4;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  z-index: 9999;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: none;
+  animation: fadeOut 3s forwards;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .alerta-carrinho {
+    font-size: 14px;
+    padding: 10px 15px;
+    bottom: 15px;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+/* Botão "Adicionar" clicado */
+.btn-adicionar.clicked {
+  background-color: #e60073 !important;
+  color: white !important;
+}

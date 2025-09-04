@@ -85,3 +85,23 @@ function enviarWhatsApp() {
     const altura = navbar.offsetHeight + 15; // 30px extra para margem
     document.body.style.paddingTop = `${altura}px`;
   });
+
+
+  function adicionarCarrinho(produto) {
+  carrinho.push(produto);
+  atualizarCarrinho();
+  mostrarAlerta();
+
+  // Mudar cor do botão clicado
+  const botoes = document.querySelectorAll('.btn-adicionar');
+  botoes.forEach(botao => {
+    botao.addEventListener('click', function () {
+      this.classList.add('clicked');
+
+      // Voltar à cor original após 1 segundo (opcional)
+      setTimeout(() => {
+        this.classList.remove('clicked');
+      }, 1000);
+    });
+  });
+}

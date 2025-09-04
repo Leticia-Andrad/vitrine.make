@@ -716,7 +716,7 @@
         </div>
       </div>
 
-
+<div id="alerta" class="alerta-carrinho">Produto adicionado ao carrinho! 🎉</div>
 
       <!-- Seção de Novidades -->
 <section class="novidades">
@@ -759,6 +759,21 @@
     carrinho.splice(index, 1);
     atualizarCarrinho();
   }
+
+ function adicionarCarrinho(produto) {
+  carrinho.push(produto);
+  atualizarCarrinho();
+  mostrarAlerta();
+}
+
+function mostrarAlerta() {
+  const alerta = document.getElementById('alerta');
+  alerta.style.display = 'block';
+
+  setTimeout(() => {
+    alerta.style.display = 'none';
+  }, 3000);
+}
 
   function atualizarCarrinho() {
     lista.innerHTML = '';
